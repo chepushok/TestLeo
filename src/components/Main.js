@@ -1,12 +1,9 @@
 import React, {useState} from 'react'
-import background from '../images/background.png'
 import '../styles/styles.css'
 const Main = () => {
 
     let [isVis, setVis] = useState('sidetext-hide')
     let [bolka, setBolka] = useState(false)
-    
-
 
     return (
         <main>
@@ -30,9 +27,7 @@ const Main = () => {
                         <span>ADVANCED</span>
                     </div>
                 </div>
-
             </div>
-
         </main>
     )
 }
