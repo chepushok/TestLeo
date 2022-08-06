@@ -6,8 +6,6 @@ const Main = () => {
     let [isVis, setVis] = useState('sidetext-hide')
     let [bolka, setBolka] = useState(false)
     
-
-
     return (
         <main>
             <div className='middle-con'>
