@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import background from '../images/background.png'
 import '../styles/styles.css'
 const Main = () => {
 
@@ -28,9 +27,7 @@ const Main = () => {
                         <span>ADVANCED</span>
                     </div>
                 </div>
-
             </div>
-
         </main>
     )
 }
