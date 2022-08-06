@@ -57,6 +57,16 @@ span{
     pointer-events: none;
     user-select: none;
 }
+.sidetext:hover{ 
+    color:green;
+    font-size:60px;
+    align-items: center;
+    justify-content: center;
+    opacity: .4;
+    transition:700ms;
+    pointer-events: none;
+    user-select: none;
+}
 .sidetext-hide{
     user-select: none;
     opacity: 0;
