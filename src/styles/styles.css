@@ -52,27 +52,28 @@ span{
     font-size:40px;
     align-items: center;
     justify-content: center;
-    opacity: .4;
+    opacity: .5;
     transition:700ms;
     pointer-events: none;
     user-select: none;
 }
-.sidetext:hover{ 
-    color:green;
-    font-size:60px;
+.sidetext-1{
+    color:white;
+    font-size:40px;
     align-items: center;
     justify-content: center;
-    opacity: .4;
-    transition:700ms;
+    opacity: .5;
+    transition:700ms 600ms;
     pointer-events: none;
     user-select: none;
 }
+
 .sidetext-hide{
     user-select: none;
     opacity: 0;
     justify-content: center;
     color:rgb(243, 243, 243);
     font-size:40px;
-    transition: 900ms;
+    transition: 900ms ;
 }
 
