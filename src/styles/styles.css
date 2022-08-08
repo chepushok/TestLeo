@@ -5,6 +5,7 @@ body{
     padding:0px;
     margin:0px;
     background: url('../images/background.png') no-repeat center center fixed;
+    letter-spacing: 0.001px;
     background-size:cover ;
 }
 .background{
@@ -24,6 +25,7 @@ body{
 }
 
 .newbies-block, .beginners-block, .advanced-block{
+    width: 350px;
     font-size:60px;
     user-select: none;
 
@@ -32,7 +34,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 56px;
 }
 .newbies-pad{
     margin-right:100px;
@@ -40,7 +41,12 @@ body{
 .advanced-pad{
     margin-left:100px;
 }
+.begin-span{
+    display: flex;
+    justify-content: center;
+}
 .begin-span:hover{
+    font-size:65px;
     color:white;
     transition: 400ms;
 }
@@ -52,28 +58,45 @@ span{
     font-size:40px;
     align-items: center;
     justify-content: center;
-    opacity: .5;
-    transition:700ms;
-    pointer-events: none;
+    opacity: .2;
     user-select: none;
+    transition:300ms
+
+}
+.hover:hover{
+    transition: 200ms;
+    opacity: 1;
+    font-size:45px
 }
 .sidetext-1{
     color:white;
     font-size:40px;
     align-items: center;
     justify-content: center;
-    opacity: .5;
-    transition:700ms 600ms;
-    pointer-events: none;
+    opacity: 0.2;
     user-select: none;
+    transition:700ms 
 }
-
 .sidetext-hide{
     user-select: none;
     opacity: 0;
     justify-content: center;
     color:rgb(243, 243, 243);
     font-size:40px;
-    transition: 900ms ;
+    transition: 500ms ;
 }
+.upper-box{
+    position: absolute;
+    margin-bottom: 160px;
+    justify-content: center;
+    
+}
+.down-box{
+    position: absolute;
+    margin-top:160px;
+    justify-content: center;
+    
+}
+
+
 
