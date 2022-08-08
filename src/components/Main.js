@@ -3,11 +3,6 @@ import '../styles/styles.css'
 import Beginners from './Beginners'
 const Main = () => {
 
-    let [isVis, setVis] = useState('sidetext-hide')
-    let [bolka, setBolka] = useState(false)
-    let [isVisTr, setVisTr] = useState('sidetext-hide')
-
-
     return (
         <main>
             <div className='middle-con'>
