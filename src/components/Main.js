@@ -13,7 +13,6 @@ const Main = () => {
 
                     <Beginners/>
 
-
                     <div className='advanced-block advanced-pad'>
                         <span className='hov'>ADVANCED</span>
                     </div>

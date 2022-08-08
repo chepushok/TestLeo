@@ -44,11 +44,13 @@ body{
 .begin-span{
     display: flex;
     justify-content: center;
+    transition:500ms;
 }
-.begin-span:hover{
+.begin-span-hover{
     font-size:65px;
     color:white;
     transition: 400ms;
+    justify-content: center;
 }
 span{
     display: flex;
