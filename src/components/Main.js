@@ -1,16 +1,15 @@
 import React, {useState} from 'react'
 import '../styles/styles.css'
 import Beginners from './Beginners'
+import Newbies from './Newbies'
+
 const Main = () => {
 
     return (
         <main>
             <div className='middle-con'>
                 <div className='block-con'>
-                    <div className='newbies-block newbies-pad' >
-                        <span>NEWBIES</span>
-                    </div>
-
+                    <Newbies/>
                     <Beginners/>
 
                     <div className='advanced-block advanced-pad'>

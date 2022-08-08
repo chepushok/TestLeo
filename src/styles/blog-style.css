@@ -1,0 +1,99 @@
+
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+  background-image: url('../images/back1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main{
+  width: 100%; 
+  height: 100%;
+  background: url('../images/background.png') no-repeat center center fixed;
+  background-size:cover ;
+}
+.App{
+  display: block;
+}
+
+hr{
+  border: none;
+  width: 800px;
+  height: 2.5px;
+  background-color: rgba(0, 191, 255, 0.751);
+}
+
+.post{
+  max-width: 800px;
+  background-color: rgba(69, 69, 69, 0.5);
+  padding: 22px;
+  margin-top: 20px;
+  border-radius: 12px;
+}
+
+.head{
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.body{
+  font-size: 20px;
+  color:rgb(159, 159, 159);
+}
+
+button{
+  color:white;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-right: 10px;
+  padding: 4px;
+  padding-left: 7px;
+  padding-right: 7px;
+  background-color: rgba(2, 217, 255, 0.503);
+  border-radius: 30px;
+  border: 0px solid rgb(38, 38, 38);
+}
+
+.Posts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: 25px;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 191, 255, 0.751);
+  border-radius: 30%;
+}
+
+.buttons{
+  display: flex;
+  margin-left: 900px;
+}
+
+.choose{
+  margin-right: 60px;
+  font-size: 25px;
+  color: white;
+  background-color: rgba(29, 29, 29, 0.9);
+  padding: 5px;
+  padding-left: 9px;
+  padding-right: 9px;
+  border-radius: 15px;
+
+}
+
+.level{
+  color:yellow;
+  background-color: rgba(29, 29, 29, 0.9);
+}

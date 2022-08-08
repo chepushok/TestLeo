@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap');
 
-body{
+body {
     font-family: 'Montserrat';
     padding:0px;
     margin:0px;
-    background: url('../images/background.png') no-repeat center center fixed;
-    letter-spacing: 0.001px;
-    background-size:cover ;
+    background-color: grey;
 }
-.background{
+main{
     width: 100%; 
     height: 100%;
+    background: url('../images/background.png') no-repeat center center fixed;
+    background-size:cover ;
 }
 
 .middle-con{
@@ -28,6 +28,7 @@ body{
     width: 350px;
     font-size:60px;
     user-select: none;
+    letter-spacing: 3px;
 
 }
 .block-con{
@@ -97,8 +98,25 @@ span{
     position: absolute;
     margin-top:160px;
     justify-content: center;
-    
 }
-
-
-
+.active{
+    background-color: red;
+}
+.upper-boxN{
+    width: 400px;
+    margin-bottom: 160px;
+    left:0;
+    margin-left:45px;
+    position: absolute;
+}
+.down-boxN{
+    width: 400px;
+    left:0;
+    margin-left:45px;
+    position: absolute;
+    margin-top:160px;
+}
+.upper-boxN span{
+    justify-content: center;
+    align-items: center;
+}

@@ -1,22 +1,25 @@
 import React, {useState} from 'react'
+import { BrowserRouter as Router, Link } from "react-router-dom";
+
 
 const Newbies = ()=>{
 
-    let [isVis, setVis] = useState('sidetext-hide')
-    let [bolka, setBolka] = useState(false)
+    let [isVisN, setVisN] = useState('sidetext-hide')
+    let [bolkaN, setBolkaN] = useState(false)
+    let [begHoverN, setBegHoverN] = useState(`begin-span`)
 
     return (
         <>
-        <div className='beginners-block center'>
-            <span className='begin-span' onMouseEnter={()=>{setBolka(true);setVis('sidetext')}} onMouseLeave={()=>{setVis('sidetext-hide')}} ></span>
+        <div className='newbies-block newbies-pad'>
+            <span className={begHoverN} onMouseEnter={()=>{setBolkaN(true);setVisN('sidetext');;setBegHoverN('begin-span-hover')}} onMouseLeave={()=>{setVisN('sidetext-hide');setBegHoverN('begin-span')}} >NEWBIES</span>
         </div>
-        <div className='upper-box' onMouseEnter={()=>bolka?setVis(isVis + ' hover'):setVis('sidetext-hide')} onMouseLeave={()=>{setVis('sidetext-hide');setBolka(false)}}>
-            <span className={isVis}>IDE SETTING</span>
-            <span className={isVis}>SETUP GUIDES</span>
+        <div className='upper-boxN' onMouseEnter={()=>bolkaN?(setVisN(isVisN + ' hover'),setBegHoverN('begin-span-hover')):setVisN('sidetext-hide')} onMouseLeave={()=>{setVisN('sidetext-hide');setBolkaN(false);setBegHoverN('begin-span')}}>
+            <span className={isVisN}>IDE SETTING</span>
+            <span className={isVisN}>SETUP GUIDES</span>
         </div>
-        <div className='down-box' onMouseEnter={()=>bolka?setVis(isVis + ' hover'):setVis('sidetext-hide')} onMouseLeave={()=>{setVis('sidetext-hide');setBolka(false)}}>
-            <span className={isVis}>SETUP GUIDES</span>
-            <span className={isVis}>IDE SETTING</span>
+        <div className='down-boxN' onMouseEnter={()=>bolkaN?setVisN((isVisN + ' hover'),setBegHoverN('begin-span-hover')):setVisN('sidetext-hide')} onMouseLeave={()=>{setVisN('sidetext-hide');setBolkaN(false);setBegHoverN('begin-span')}}>
+            <span className={isVisN}><Link to='/beginners'>SETUP GUIDES </Link></span>
+            <span className={isVisN}>IDE SETTING</span>
         </div>
         </>
     )
