@@ -18,7 +18,7 @@ const Newbies = ()=>{
             <span className={isVisN}>SETUP GUIDES</span>
         </div>
         <div className='down-boxN' onMouseEnter={()=>bolkaN?setVisN((isVisN + ' hover'),setBegHoverN('begin-span-hover')):setVisN('sidetext-hide')} onMouseLeave={()=>{setVisN('sidetext-hide');setBolkaN(false);setBegHoverN('begin-span')}}>
-            <span className={isVisN}><Link to='/beginners'>SETUP GUIDES </Link></span>
+            <span className={isVisN}>SETUP GUIDES</span>
             <span className={isVisN}>IDE SETTING</span>
         </div>
         </>
