@@ -11,7 +11,7 @@ function BlogNewb() {
       <div className="App">
         <div className='logo'>
           <div className='buttons'>
-            <div className='choose level'>Newbies</div> <div className='choose'>Beginers</div> <div className='choose'>Advanced</div>
+            <div className='choose'>Newbies</div> <div className='choose level'>Beginers</div> <div className='choose'>Advanced</div>
           </div>
         </div>
         <div className='Posts'>

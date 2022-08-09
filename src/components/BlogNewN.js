@@ -12,7 +12,7 @@ function BlogNewN() {
       <div className="App">
         <div className='logo'>
           <div className='buttons'>
-            <div className={choose} onClick={()=>setChoose('choose level')}>Newbies</div> <div className='choose'>Beginers</div> <div className='choose'>Advanced</div>
+            <div className= 'choose level'>Newbies</div> <div className='choose'>Beginers</div> <div className='choose'>Advanced</div>
           </div>
         </div>
         <div className='Posts'>
