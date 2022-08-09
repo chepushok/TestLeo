@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import {Post} from './Post'
 import {PostRU} from './PostRU'
 
-function Blog() {
+function BlogNewb() {
     const[choose,setChoose] = useState('choose')
     const[post,setPost] = useState(<><Post/><Post/><Post/></>)
   
@@ -26,5 +26,4 @@ function Blog() {
     </div>
     );
   }
-  
-  export default Blog;
+  export default BlogNewb;

@@ -1,6 +1,6 @@
 import React from 'react'
 import Main from './components/Main'
-import Blog from './components/Blog'
+import BlogNewb from './components/BlogNewb'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
 function App() {
@@ -12,8 +12,7 @@ function App() {
       <Routes>
 
         <Route path='/' element={<Main/>}/>  
-        <Route path='/beginners' element={<Blog/>}/>
-
+        <Route path='/beginners' element={<BlogNewb></BlogNewb>}/>
       </Routes>
 
     </Router>
