@@ -2,6 +2,7 @@ import '../styles/blog-style.css';
 import React, { useState } from 'react';
 import {Post} from './Post'
 import {PostRU} from './PostRU'
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 function BlogNewb() {
     const[post,setPost] = useState(<><Post/><Post/><Post/></>)
@@ -11,7 +12,7 @@ function BlogNewb() {
       <div className="App">
         <div className='logo'>
           <div className='buttons'>
-            <div className='choose'>Newbies</div> <div className='choose level'>Beginers</div> <div className='choose'>Advanced</div>
+            <Link to='/Newbies'><div className='choose'>Newbies</div></Link> <Link to='/Beginners'><div className='choose level'>Beginners</div></Link> <Link to='/Advanced'><div className='choose'>Advanced</div></Link>
           </div>
         </div>
         <div className='Posts'>

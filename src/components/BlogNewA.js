@@ -2,6 +2,8 @@ import '../styles/blog-style.css';
 import React, { useState } from 'react';
 import {Post} from './Post'
 import {PostRU} from './PostRU'
+import { BrowserRouter as Router, Link } from "react-router-dom";
+
 
 function BlogNewb() {
     const[choose,setChoose] = useState('choose')
@@ -12,7 +14,7 @@ function BlogNewb() {
       <div className="App">
         <div className='logo'>
           <div className='buttons'>
-            <div className='choose'>Newbies</div> <div className='choose'>Beginers</div> <div className='choose level'>Advanced</div>
+            <Link to='/Newbies'><div className='choose'>Newbies</div></Link> <Link to='/Beginners'><div className='choose'>Beginners</div></Link> <Link to='/Advanced'><div className='choose level'>Advanced</div></Link>
           </div>
         </div>
         <div className='Posts'>

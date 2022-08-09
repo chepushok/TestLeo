@@ -25,7 +25,7 @@ main{
 }
 
 .newbies-block, .beginners-block, .advanced-block{
-    width: 350px;
+    width: 400px;
     font-size:60px;
     user-select: none;
     letter-spacing: 3px;
@@ -39,13 +39,14 @@ a{
 .block-con{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 .newbies-pad{
-    margin-right:100px;
+    /* margin-right:100px; */
 }
 .advanced-pad{
-    margin-left:100px;
+    /* margin-left:100px; */
+    padding-left:5vw;
 }
 .advanced-span{
     justify-content: center;
