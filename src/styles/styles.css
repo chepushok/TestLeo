@@ -7,8 +7,8 @@ body {
     background-color: grey;
 }
 main{
-    width: 100%; 
-    height: 100%;
+    width: 100vw; 
+    height: 100vh;
     background: url('../images/background.png') no-repeat center center fixed;
     background-size:cover ;
 }
@@ -42,10 +42,9 @@ a{
     justify-content: space-between;
 }
 .newbies-pad{
-    /* margin-right:100px; */
+    padding-right:5vw;
 }
 .advanced-pad{
-    /* margin-left:100px; */
     padding-left:5vw;
 }
 .advanced-span{
@@ -102,33 +101,46 @@ span{
 }
 .upper-box{
     position: absolute;
-    margin-bottom: 160px;
-    justify-content: center;
-    
+    width: 400px;
+    padding-top:220px;
+    top: 0;
 }
 .down-box{
     position: absolute;
-    margin-top:160px;
-    justify-content: center;
+    width: 400px;   
+    padding-bottom:220px;
+    bottom: 0;
 }
 .active{
     background-color: red;
 }
 .upper-boxN{
-    width: 400px;
-    margin-bottom: 160px;
-    left:0;
-    margin-left:45px;
     position: absolute;
+    width: 400px;
+    padding-top:220px;
+    top: 0;
 }
 .down-boxN{
-    width: 400px;
-    left:0;
-    margin-left:45px;
     position: absolute;
-    margin-top:160px;
+    width: 400px;   
+    padding-bottom:220px;
+    bottom: 0;
 }
 .upper-boxN span{
     justify-content: center;
     align-items: center;
+}
+.upper-boxA{
+    position: absolute;
+    width: 400px;
+    padding-left:75px;
+    padding-top:220px;
+    top: 0;
+}
+.down-boxA{
+    position: absolute;
+    width: 400px;
+    padding-left:75px;
+    padding-bottom:220px;
+    bottom: 0;
 }
