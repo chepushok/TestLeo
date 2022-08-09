@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
-import { BrowserRouter as Link } from "react-router-dom";
-
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 const Newbies = ()=>{
 
@@ -18,7 +17,7 @@ const Newbies = ()=>{
             <span className={isVisA}>SETUP GUIDES</span>
         </div>
         <div className='down-boxN' onMouseEnter={()=>bolkaA?setVisA((isVisA + ' hover'),setBegHoverA('begin-span-hover')):setVisA('sidetext-hide')} onMouseLeave={()=>{setVisA('sidetext-hide');setBolkaA(false);setBegHoverA('begin-span')}}>
-            <span className={isVisA}><Link to='/beginners'>SETUP GUIDES </Link></span>
+            <span className={isVisA}>SETUP GUIDES</span>
             <span className={isVisA}>IDE SETTING</span>
         </div>
         </>
