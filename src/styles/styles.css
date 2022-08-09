@@ -29,7 +29,12 @@ main{
     font-size:60px;
     user-select: none;
     letter-spacing: 3px;
+    color:black;
+    text-decoration: none;
 
+}
+a{
+    text-decoration: none;
 }
 .block-con{
     display: flex;
@@ -42,10 +47,16 @@ main{
 .advanced-pad{
     margin-left:100px;
 }
+.advanced-span{
+    justify-content: center;
+    text-decoration: none;
+    color:black
+}
 .begin-span{
     display: flex;
     justify-content: center;
     transition:500ms;
+
 }
 .begin-span-hover{
     font-size:65px;
