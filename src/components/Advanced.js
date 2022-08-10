@@ -15,7 +15,7 @@ const Newbies = ()=>{
             <span className={isVisA}>SETUP GUIDES</span>
         </div>
         <div className='advanced-block advanced-pad'>
-            <span className={begHoverA} onMouseEnter={()=>{setBolkaA(true);setVisA('sidetext');;setBegHoverA('begin-span-hover')}} onMouseLeave={()=>{setVisA('sidetext-hide');setBegHoverA('advanced-span')}} >ADVANCED</span>
+        <Link to ='/Advanced'><span className={begHoverA} onMouseEnter={()=>{setBolkaA(true);setVisA('sidetext');;setBegHoverA('begin-span-hover')}} onMouseLeave={()=>{setVisA('sidetext-hide');setBegHoverA('advanced-span')}} >ADVANCED</span></Link>
         </div>
         <div className='down-boxA' onMouseEnter={()=>bolkaA?setVisA((isVisA + ' hover'),setBegHoverA('begin-span-hover')):setVisA('sidetext-hide')} onMouseLeave={()=>{setVisA('sidetext-hide');setBolkaA(false);setBegHoverA('begin-span')}}>
             <span className={isVisA}>SETUP GUIDES</span>

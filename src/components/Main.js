@@ -10,9 +10,9 @@ const Main = () => {
         <main>
             <div className='middle-con'>
                 <div className='block-con'>
-                    <Link to='/Newbies'><Newbies/></Link>
-                    <Link to ='/Beginners'><Beginners/></Link>
-                    <Link to ='/Advanced'><Advanced/></Link>
+                    <Newbies/>
+                    <Beginners/>
+                    <Advanced/>
                 </div>
             </div>
         </main>

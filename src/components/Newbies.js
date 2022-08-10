@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 
 const Newbies = ()=>{
@@ -11,7 +11,7 @@ const Newbies = ()=>{
     return (
         <>
         <div className='newbies-block newbies-pad'>
-            <span className={begHoverN} onMouseEnter={()=>{setBolkaN(true);setVisN('sidetext');;setBegHoverN('begin-span-hover')}} onMouseLeave={()=>{setVisN('sidetext-hide');setBegHoverN('begin-span')}} >NEWBIES</span>
+        <Link to='/Newbies'><span className={begHoverN} onMouseEnter={()=>{setBolkaN(true);setVisN('sidetext');;setBegHoverN('begin-span-hover')}} onMouseLeave={()=>{setVisN('sidetext-hide');setBegHoverN('begin-span')}} >NEWBIES</span></Link>
         </div>
         <div className='upper-boxN' onMouseEnter={()=>bolkaN?(setVisN(isVisN + ' hover'),setBegHoverN('begin-span-hover')):setVisN('sidetext-hide')} onMouseLeave={()=>{setVisN('sidetext-hide');setBolkaN(false);setBegHoverN('begin-span')}}>
             <span className={isVisN}>IDE SETTING</span>

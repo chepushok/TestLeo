@@ -102,29 +102,27 @@ span{
 .upper-box{
     position: absolute;
     width: 400px;
-    padding-top:220px;
-    top: 0;
+    top: 220px;
+    left:570px
 }
 .down-box{
     position: absolute;
-    width: 400px;   
-    padding-bottom:220px;
-    bottom: 0;
+    width: 400px; 
+    left:570px;  
+    bottom: 220px;
 }
 .active{
     background-color: red;
 }
 .upper-boxN{
+    top: 220px;
     position: absolute;
     width: 400px;
-    padding-top:220px;
-    top: 0;
 }
 .down-boxN{
     position: absolute;
     width: 400px;   
-    padding-bottom:220px;
-    bottom: 0;
+    bottom: 220px;
 }
 .upper-boxN span{
     justify-content: center;
@@ -133,14 +131,17 @@ span{
 .upper-boxA{
     position: absolute;
     width: 400px;
-    padding-left:75px;
-    padding-top:220px;
-    top: 0;
+    top: 220px;
+    right: 90px
+
 }
 .down-boxA{
     position: absolute;
-    width: 400px;
-    padding-left:75px;
-    padding-bottom:220px;
-    bottom: 0;
+    width: 400px; 
+    right: 90px; 
+    bottom: 220px;
+}
+a{
+    text-decoration: none;
+    color:black
 }
