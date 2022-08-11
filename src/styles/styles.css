@@ -20,6 +20,9 @@ main{
 .wrapper{
     height: 100px;
 }
+.wrap{
+    width: 100px;
+}
 .beginners-con, .advanced-con, .newbies-con{
     width: 430px;
     height: 280px;
@@ -67,6 +70,7 @@ span{
     display: flex;
 }
 .sidetext{
+    white-space: nowrap;
     color:white;
     font-size:40px;
     align-items: center;
@@ -91,6 +95,7 @@ span{
     transition:700ms 
 }
 .sidetext-hide{
+    white-space: nowrap;
     user-select: none;
     opacity: 0;
     justify-content: center;
