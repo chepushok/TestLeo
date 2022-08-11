@@ -7,6 +7,7 @@ body {
     background-color: grey;
 }
 main{
+    align-items: center;
     width: 100vw; 
     height: 100vh;
     background: url('../images/background.png') no-repeat center center fixed;
@@ -14,52 +15,50 @@ main{
 }
 
 .middle-con{
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    right:0;
-    left:0;
-    top:0;
-    bottom: 0;
-    align-items: center;
 }
 
+.wrapper{
+    height: 100px;
+}
+.beginners-con, .advanced-con, .newbies-con{
+    width: 430px;
+    height: 280px;
+}
 .newbies-block, .beginners-block, .advanced-block{
-    width: 400px;
-    font-size:60px;
+    justify-content: center;
+    font-size:calc(24px + 36 * (100vw/1440));
     user-select: none;
     letter-spacing: 3px;
     color:black;
     text-decoration: none;
-
+}
+.block-con div{
+    margin: 0 auto;
 }
 a{
     text-decoration: none;
 }
 .block-con{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
-.newbies-pad{
-    padding-right:5vw;
-}
-.advanced-pad{
-    padding-left:5vw;
-}
+
 .advanced-span{
     justify-content: center;
     text-decoration: none;
     color:black
 }
 .begin-span{
-    display: flex;
-    justify-content: center;
     transition:500ms;
+    display: flex;
+    justify-content: center
 
 }
 .begin-span-hover{
-    font-size:65px;
+    font-size:calc(29px + 36 * (100vw/1440));
     color:white;
     transition: 400ms;
     justify-content: center;
@@ -100,14 +99,12 @@ span{
     transition: 500ms ;
 }
 .upper-box{
-    position: absolute;
-    width: 400px;
+    height: 100px;
     top: 220px;
     left:570px
 }
 .down-box{
-    position: absolute;
-    width: 400px; 
+    height: 100px;
     left:570px;  
     bottom: 220px;
 }
@@ -116,12 +113,10 @@ span{
 }
 .upper-boxN{
     top: 220px;
-    position: absolute;
-    width: 400px;
+    height: 100px;
 }
 .down-boxN{
-    position: absolute;
-    width: 400px;   
+    height: 100px;   
     bottom: 220px;
 }
 .upper-boxN span{
@@ -129,15 +124,13 @@ span{
     align-items: center;
 }
 .upper-boxA{
-    position: absolute;
-    width: 400px;
+    height: 100px;
     top: 220px;
     right: 90px
 
 }
 .down-boxA{
-    position: absolute;
-    width: 400px; 
+    height: 100px;
     right: 90px; 
     bottom: 220px;
 }

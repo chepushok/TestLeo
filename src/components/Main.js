@@ -8,13 +8,13 @@ import { BrowserRouter as Router, Link } from "react-router-dom";
 const Main = () => {
     return (
         <main>
-            <div className='middle-con'>
+         
                 <div className='block-con'>
                     <Newbies/>
                     <Beginners/>
                     <Advanced/>
                 </div>
-            </div>
+ 
         </main>
     )
 }
