@@ -19,8 +19,8 @@ const textAnimation ={
 
 const MoiPosti = () =>{
     const myRef = useRef()
-    const [fullPost,changeFullPost] = useState('post')
-    const [check, setCheck] = useState(false)
+    const [fullPost,changeFullPost] = useState()
+    const [k, setK] = useState(false)
     const addToRefs = (el) => {
         // console.log(el)
     }
@@ -35,10 +35,10 @@ const MoiPosti = () =>{
                                 <div className='title'>{item.title}</div> <div className='dashes'>//</div>
                             </h1>
                             <div  className={'post-text'} >
-                                <div className={'text'}>
-                                    {item.post}
+                                <div className={(fullPost===index && k==true)?'text-full':'text'}>
+                                    {(fullPost===index && k==true)?item.postFull:item.post}
                                 </div>
-                                <button className='more' onClick={()=>{changeFullPost(item.postFull)}}>
+                                <button className='more' onClick={()=>{changeFullPost(index);setK(!k); console.log(k)}}>
                                     More
                                 </button>
                             </div>
