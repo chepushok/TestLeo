@@ -1,7 +1,8 @@
 const Data =[
     {
         title: 'IDE SETTING',
-        post: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at egestas dolor. Nunc non justo et nisl condimentum fermentum sit amet sit amet orci. Morbi dictum viverra felis eget ornare. Nam tempus orci a tempus iaculis. Aenean feugiat urna ac ipsum fermentum, et vestibulum velit ornare. Ut sed ornare ante. Proin molestie, purus in viverra bibendum, arcu diam ultrices eros, sed dictum quam neque in odio.'
+        post: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at egestas dolor. Nunc non justo et nisl condimentum fermentum sit amet sit amet orci. Morbi dictum viverra felis eget ornare. Nam tempus orci a tempus iaculis. Aenean feugiat urna ac ipsum fermentum, et vestibulum velit ornare. Ut sed ornare ante. Proin molestie, purus in viverra bibendum, arcu diam ultrices eros, sed dictum quam neque in odio.',
+        postFull: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at egestas dolor. Nunc non justo et nisl condimentum fermentum sit amet sit amet orci. Morbi dictum viverra felis eget ornare. Nam tempus orci a tempus iaculis. Aenean feugiat urna ac ipsum fermentum, et vestibulum velit ornare. Ut sed ornare ante. Proin molestie, purus in viverra bibendum, arcu diam ultrices eros, sed dictum quam neque in odio.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at egestas dolor. Nunc non justo et nisl condimentum fermentum sit amet sit amet orci. Morbi dictum viverra felis eget ornare. Nam tempus orci a tempus iaculis. Aenean feugiat urna ac ipsum fermentum, et vestibulum velit ornare. Ut sed ornare ante. Proin molestie, purus in viverra bibendum, arcu diam ultrices eros, sed dictum quam neque in odio.'
     },
     {
         title: 'ИНТСА САМКА',

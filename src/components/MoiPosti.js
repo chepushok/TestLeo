@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState,useRef, useEffect } from 'react'
 import Data from './Data'
 import {motion} from 'framer-motion'
 import { AiOutlineArrowDown } from 'react-icons/ai';
+import { useSearchParams } from 'react-router-dom';
 
 const textAnimation ={
     hidden: {
@@ -17,28 +18,34 @@ const textAnimation ={
 
 
 const MoiPosti = () =>{
+    const myRef = useRef()
+    const [fullPost,changeFullPost] = useState('post')
+    const [check, setCheck] = useState(false)
+    const addToRefs = (el) => {
+        // console.log(el)
+    }
+
     return(
         <>
             {Data.map((item,index)=>{
                 return (
-                    <motion.div initial='hidden' whileInView='visible' viewport={{amount: 0.35, once:true}} variants={textAnimation} className={'content' + ' ' + '.element-animation'}>
-                        <div className='content-page'>
+                    <div  className={'content'}>
+                        <div ref={addToRefs} className='content-page'>
                             <h1 className='page-name'>
                                 <div className='title'>{item.title}</div> <div className='dashes'>//</div>
                             </h1>
-                            <div className={'post-text'} >
-                                <div className='text'>
-                                {item.post}
-                                </div> 
-
-                                <div className='more'>
-                                    More
+                            <div  className={'post-text'} >
+                                <div className={'text'}>
+                                    {item.post}
                                 </div>
+                                <button className='more' onClick={()=>{changeFullPost(item.postFull)}}>
+                                    More
+                                </button>
                             </div>
 
                             
                         </div>
-                    </motion.div>
+                    </div>
                 )
             })}
       </>

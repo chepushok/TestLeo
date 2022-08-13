@@ -15,15 +15,15 @@ import React from "react";
 // for (let elm of elements) {
 //   observer.observe(elm);
 // }
-function SmoothAppearance(){
-  let element=document.getElementsByClassName('.element-animation')
-  for (let i of element){
-    i.classList.add('element-show')
-  }
-  console.log(element)
-}
+// function SmoothAppearance(){
+//   let element=document.getElementsByClassName('.element-animation')
+//   for (let i of element){
+//     i.classList.add('element-show')
+//   }
+//   console.log(element)
+// }
 
-window.addEventListener('scroll',()=>{SmoothAppearance()})
+// window.addEventListener('scroll',()=>{SmoothAppearance()})
 
 
 
