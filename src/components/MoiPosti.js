@@ -39,7 +39,7 @@ const MoiPosti = () =>{
                                     {(fullPost===index && k==true)?item.postFull:item.post}
                                 </div>
                                 <button className='more' onClick={()=>{changeFullPost(index);setK(!k); console.log(k)}}>
-                                    More
+                                    MORE..
                                 </button>
                             </div>
 

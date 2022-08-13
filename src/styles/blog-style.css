@@ -221,6 +221,7 @@ button{
 }
 .post-text{
   display: flex;
+  flex-direction: column;
   /* width: 85%;; */
 }
 .text{
@@ -228,35 +229,48 @@ button{
   background:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(78, 78, 78,0) 97%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding-right: 30px;
 }.text-full{
   display: flex;
   transition: 500ms;
+  padding-right: 30px;
   color:rgba(255, 255, 255, 0.7);
 
 }
 .more{
   color:white;
   display:flex;
-  height: 100%;
-  margin-top:auto;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+  color:rgba(255, 255, 255, 0.3);
+  height: 25px;
+  width: 110px;
+  margin:auto 0 0 auto;
   background-color:rgba(255, 255, 255, 0.1);
   border:none;
   padding:2px 6px 2px 6px;
-  border-radius: 3px;
   transition:150ms;
+  border-radius: 100px 3px 3px 3px;
 }
 .more:hover{
   color:white;
   display:flex;
-  height: 100%;
-  margin-top:auto;  
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 2px;
+  color:rgba(255, 255, 255, 0.5);
+  height: 25px;
+  width: 110px;
+  margin:auto 0 0 auto;
   background-color:rgba(255, 255, 255, 0.2);
-  transition:150ms;
+  border:none;
   padding:2px 6px 2px 6px;
-  border-radius: 3px;
+  transition:150ms;
+  border-radius: 100px 3px 3px 3px;
 }
 .content-page{
-  padding:25px 30px 30px 30px;
+  padding:25px 0px 0px 30px;
   background-color: rgba(78, 78, 78, 0.3); 
   box-shadow: 10px 10px 10px rgba(0,0,0,0.5);;
   border-radius: 3px;
