@@ -3,29 +3,40 @@ import React, { useState } from 'react';
 import {Post} from './Post'
 import {PostRU} from './PostRU'
 import { BrowserRouter as Router, Link } from "react-router-dom";
-
+import MoiPosti from './MoiPosti'
+import Navigation from './Navigation';
 
 function BlogNewb() {
-    const[choose,setChoose] = useState('choose')
-    const[post,setPost] = useState(<><Post/><Post/><Post/></>)
+    const[post,setPost] = useState(<><Post/></>)
   
     return (
-    <div className='Blog'>
-      <div className="App">
-        <div className='logo'>
-          <div className='buttons'>
-            <Link to='/Newbies'><div className='choose'>Newbies</div></Link> <Link to='/Beginners'><div className='choose'>Beginners</div></Link> <Link to='/Advanced'><div className='choose level'>Advanced</div></Link>
+      <div className='mains'>
+
+        {/* NAVBAR */}
+        <div className='navbar-con'>
+          <div className='navbar'>
+            <div className='logoALEO'>
+              Leo.<span>guides</span>
+            </div>
+            <div className='nav-buttons'>
+              <div className='selection'><span>NEWBIES</span></div>
+              <div><span>BEGINNER</span></div>
+              <div><span>ADVANCED</span></div>
+            </div>
           </div>
         </div>
-        <div className='Posts'>
-          <div className='langbuttons'>
-            <button onClick={()=> setPost(<><PostRU/><PostRU/><PostRU/></>)}>RU</button>
-            <button onClick={()=> setPost(<><Post/><Post/><Post/></>)}>EN</button>
+
+        {/* CONTENT */}
+        <div className='content-con'>
+          <div className='sderzhivatel'>
+            <MoiPosti/>
           </div>
-        {post}
+          <div className='content-navigation'>
+            <Navigation/>
+          </div>
         </div>
+        
       </div>
-    </div>
     );
   }
-  export default BlogNewb;
+export default BlogNewb;

@@ -1,4 +1,6 @@
-.Blog{
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap');
+
+/* .Blog{
   display: flex;
   background-color: rgb(119, 0, 134);
 }
@@ -27,7 +29,6 @@ hr{
   margin-bottom: 10px;
 }
 .body{
-  /* font-family: 'Open Sans', sans-serif;  */
   font-size: 20px;
   color:rgb(159, 159, 159);
   margin-bottom: 5px;
@@ -91,4 +92,165 @@ button{
 .langbuttons{
   margin-top: 30px;
   margin-right: 400px;
+} */
+
+/* СТАРАЯ ЧАСТЬ КОДА */
+
+.mains{
+  font-family: 'Open Sans', sans-serif;
+  background-color:#0a0c17;
+  width: 100%;
+  height: 100%;
 }
+/* NAVBAR */
+.navbar-con{
+  display: flex;
+  justify-content: center;
+
+}
+.navbar{
+  display: flex;
+  position: fixed;
+  width: 90%;
+  background-color: #0a0c17;
+  justify-content: space-between;
+  padding:20px 0 20px 0;
+}
+.logoALEO{
+  font-weight: 600;
+  font-size:35px;
+  color: rgb(254, 254, 254);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 5px;
+}
+.logoALEO span{
+  background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,92,121,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.nav-buttons{
+  display: flex;
+  width: 380px;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 5px;
+}
+.nav-buttons span{
+  display: flex;
+  align-items: flex-end;
+  font-size:15px;
+  border-radius: 4px;
+  padding:7px;
+  padding-top:4px;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+}
+.selection span{
+  background:linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(9,92,121,1) 100%);
+  font-size:20px;
+  opacity: 1;
+}
+.nav-buttons div{
+  background-color:rgba(255, 255, 255, 0.1);
+  color:rgba(255, 255, 255, 0.55);
+  transition:150ms;
+  border-radius: 2px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size:20px;
+  margin-left: auto;
+}
+.nav-buttons div:hover{
+  background-color:rgba(255, 255, 255, 0.2);
+  color:rgba(255, 255, 255, 0.55);
+  transition: 150ms;
+  border-radius: 2px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size:20px;
+  margin-left: auto;
+}
+.nav-buttons span:hover{
+}
+
+/* CONTENT */
+.content-con{
+  color:white;
+  letter-spacing: 3px;
+  display: flex;
+  margin:130px  0 0 0;
+}
+.sderzhivatel{
+  display: flex;
+  flex-direction: column;
+  width: 72%;
+}
+.content{
+  display: flex;
+  width: 70%;
+  margin-bottom:30px;
+  margin-left: auto;
+}
+.page-name{
+  display: flex;
+  width: 90%;
+  white-space: nowrap;
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin: 0 0 15px 0;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  
+}
+.page-name .title{
+
+  margin:auto 7px 0px 0;
+  padding-bottom: 2px;
+
+}
+.page-name .dashes{
+  display: flex;
+  margin-top:auto;
+  font-size: 35px;
+  align-items: flex-end;
+  color:#00d4ff;
+}
+.post-text{
+  width: 85%;
+  background:linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(25,26,35,1) 68%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.content-page{
+  padding:25px 30px 30px 30px;
+  background-color: rgba(78, 78, 78, 0.3);
+  border-radius: 3px;
+}
+.content-navigation{
+  display: flex;
+  position: fixed;
+  right: 80px;
+  flex-direction: column;
+  border-right: 3px solid black;
+  padding: 0 20px 0 0;
+}
+.content-navigation div{
+  display: flex;
+  justify-content: flex-end;
+  margin:0 0 45px 0;
+}
+.content-navigation div{
+  display: flex;
+  justify-content: flex-end;
+  margin:0 0 45px 0;
+}
+.section1{
+  font-size:25px;
+  text-shadow:0 0 75px white
+}
+
