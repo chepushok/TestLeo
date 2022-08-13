@@ -5,10 +5,13 @@ import {PostRU} from './PostRU'
 import { BrowserRouter as Router, Link } from "react-router-dom";
 import MoiPosti from './MoiPosti'
 import Navigation from './Navigation';
+import SmoothAppearance from './SmoothAppearance.js'
+import {motion} from 'framer-motion'
 
 function BlogNewb() {
     const[post,setPost] = useState(<><Post/></>)
-  
+
+
     return (
       <div className='mains'>
 
@@ -35,8 +38,8 @@ function BlogNewb() {
             <Navigation/>
           </div>
         </div>
-        
       </div>
     );
   }
+
 export default BlogNewb;

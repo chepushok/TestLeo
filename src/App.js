@@ -6,11 +6,13 @@ import BlogNewA from './components/BlogNewA'
 import Advanced from './components/Advanced'
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 
+
+
 function App() {
   return (    
     
+    
     <Router>
-
 
       <Routes>
 
