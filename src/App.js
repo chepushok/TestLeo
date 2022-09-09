@@ -13,9 +13,7 @@ function App() {
     
     
     <Router>
-
       <Routes>
-
         <Route path='/' element={<Main/>}/> 
         <Route path='/Newbies' element={<BlogNewN/>}/> 
         <Route path='/Beginners' element={<BlogNewb/>}/>
